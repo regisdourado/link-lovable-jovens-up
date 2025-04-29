@@ -1,3 +1,4 @@
+
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -93,7 +94,9 @@ const LessonDetail = () => {
             </div>
             
             <div className="prose prose-sm md:prose-base max-w-none">
-              <ReactMarkdown>{lesson.content}</ReactMarkdown>
+              <ReactMarkdown className="prose prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-brand-blue prose-li:text-gray-700 prose-strong:text-gray-900 prose-blockquote:text-gray-700 prose-blockquote:border-l-4 prose-blockquote:border-brand-purple prose-blockquote:pl-4 prose-blockquote:italic prose-table:w-full prose-table:border-collapse prose-th:bg-gray-100 prose-th:p-2 prose-th:border prose-td:border prose-td:p-2">
+                {lesson.content}
+              </ReactMarkdown>
             </div>
           </div>
           
