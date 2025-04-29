@@ -12,6 +12,7 @@ import Achievements from "./pages/Achievements";
 import Community from "./pages/Community";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+<<<<<<< HEAD
 // LinkedIn Jovem pages
 import HomeLinkedinJovem from "./pages/HomeLinkedinJovem";
 import Aulas from "./pages/Aulas";
@@ -23,6 +24,8 @@ import Aula1 from "./pages/slides/Aula1";
 import Aula2 from "./pages/slides/Aula2";
 import Aula3 from "./pages/slides/Aula3";
 import Aula4 from "./pages/slides/Aula4";
+=======
+>>>>>>> 1e3efd23c800f86c3ba89329ea60d1f1fb474d01
 
 const queryClient = new QueryClient();
 
@@ -33,6 +36,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
+<<<<<<< HEAD
           {/* LinkedIn Jovem rotas customizadas */}
           <Route path="/" element={<HomeLinkedinJovem />} />
           <Route path="/aulas" element={<Aulas />} />
@@ -45,6 +49,9 @@ const App = () => (
           <Route path="/slides/aula3" element={<Aula3 />} />
           <Route path="/slides/aula4" element={<Aula4 />} />
           {/* Rotas originais do template */}
+=======
+          <Route path="/" element={<Index />} />
+>>>>>>> 1e3efd23c800f86c3ba89329ea60d1f1fb474d01
           <Route path="/modulos" element={<ModulesPage />} />
           <Route path="/modulos/:moduleId" element={<ModuleDetail />} />
           <Route path="/modulos/:moduleId/:lessonId" element={<LessonDetail />} />
